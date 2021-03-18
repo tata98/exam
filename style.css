@@ -1,0 +1,236 @@
+body, section{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    align-items: center;
+}
+#menu{
+    width:60%;
+    padding: 5px;
+}
+#logo{
+    font-size: 25px;
+    color: white;
+    background-color: #6a666d;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#main-menu{
+    justify-content: space-between;
+    display: flex;
+    list-style-type: none;
+}
+#main-menu a{
+    text-decoration: none;
+    color:#6a666d;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: bold;
+}
+ .sub-menu{
+    position: relative;
+ }
+
+.sub-menu .submenu-items{
+    width: 100px;
+    padding: 0;
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    top: 100%;
+    z-index: 999;
+ }
+ .sub-menu .submenu-items li{
+    padding: 10px 0;
+    background-color: rgb(255, 255, 255);
+ }
+
+.sub-menu:hover .submenu-items{
+    display: block;
+}
+#bg{
+    background-image:url(images/1.jpg) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 1px 15px 1px #00000080;
+}
+#text{
+    text-transform: capitalize;
+
+    border: white 3px solid;
+    padding: 20px;
+    
+}
+#border{
+    background-color: #f7f7f7;
+    width: 40%;
+    padding: 40px;
+    margin-left: auto;
+    text-align: center;
+}
+#selection{
+    display: flex;
+    list-style-type: none;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+    text-transform: capitalize;
+}
+#selection li{
+    padding: 7px 20px;
+}
+#selection li:hover{
+    background-color: black;
+    color: white;
+}
+#selection #black{
+    background-color: black;
+    color: white;
+}
+
+#section-content{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+.inner-content{
+    width: 30%;
+    background-color: white;
+    margin: 20px 0;
+    box-shadow: 1px 5px 10px 2px #0000000a;
+}
+.blog .inner-content{
+    background-color: #f7f7f7 ;
+    box-shadow: none;
+}
+.content-img{
+    height: 250px;
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.name, .work{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.work{
+    margin-top: 0;
+}
+#txt{
+    margin: 10px 15px;
+}
+
+#colored{
+    background-color: #f7f7f7;
+    
+}
+#colored h1{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 50px 0 20px 0;
+}
+.blog{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-bottom: 50px;
+}
+
+
+.footer-content{
+    margin: 50px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+#contacts {
+    justify-content: space-evenly;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+
+}
+
+#contacts a{
+    text-decoration: none;
+    color:#6a666d;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.container{
+    width: 1140px;
+    max-width: 100%;
+    margin: auto;
+}
+p, h3, h1, li{
+    color: #6a666d;
+}
+.uper-arrow{
+    width: 20px;
+    background-color: #6a666d;
+    margin-left: auto;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.uper-arrow a{
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    #menu{
+        display: none;
+    }
+    #logo{
+        margin: auto;
+    }
+    #selection{
+        padding-top: 20px;
+        display: block;
+        margin: auto;
+        text-align: center;
+        
+
+    }
+    #section-content, .blog{
+        display: block;
+    }
+    .inner-content{
+        margin: auto;
+        width: 80%;
+    }
+    .footer-content{
+        display: block;
+        text-align: center;
+        
+    }
+    #contacts{
+        display: block;
+        padding: 0;
+    }
+
+    #border{
+        background-color: #f7f7f79f;
+        width: 80%;
+        margin: auto;
+        padding: 10px;
+    }
+}
